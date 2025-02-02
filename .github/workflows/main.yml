@@ -27,9 +27,9 @@ jobs:
 
       - name: Verify installation
         run: |
-          if [ ! -f /usr/local/bin/my_executable ]; then  
+          if [ ! -f /usr/local/bin/iio-fm-radio ]; then 
             echo "Installation failed! File not found."
-            exit 1  
+            exit 1
           fi
 
       - name: Publish CI Results

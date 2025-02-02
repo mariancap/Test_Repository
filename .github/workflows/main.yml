@@ -29,6 +29,7 @@ jobs:
         run: |
           if [ ! -f /usr/local/bin/iio-fm-radio ]; then 
             echo "Installation failed! File not found."
+            exit 1
           fi
 
       - name: Publish CI Results
